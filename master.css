@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Hanken+Grotesk:wght@500;700;800&family=Jomhuria&family=Lexend+Deca&family=Open+Sans:ital,wght@1,300&family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Cairo:wght@700&family=Hanken+Grotesk:wght@500;700;800&family=Jomhuria&family=Lexend+Deca&family=Open+Sans:ital,wght@1,300&family=Outfit:wght@400;700&display=swap');
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'lexend deca' , 'Big Shoulders Display';
+    font-size: 15px;
+    font-weight: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    margin: 2rem;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 8% auto;
+    
+}
+
+.parent div {
+    padding: 40px;
+}
+
+.parent .sedans {
+    position: relative;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.parent .sedans svg {
+    position: absolute;
+    top: 10%;
+    left: 30px;
+}
+
+.parent .sedans .bt-1 {
+    background: white;
+    color:hsl(31, 77%, 52%) ;
+}
+
+.parent .SUVs {
+    background-color: hsl(184, 100%, 22%);
+    position: relative;
+}
+
+.parent .SUVs svg {
+    position: absolute;
+    top: 10%;
+    left: 12%;
+}
+
+.parent .SUVs .bt-2 {
+    background: white;
+    color: hsl(184, 100%, 22%) ;
+}
+
+.parent .luxury {
+    background-color: hsl(179, 100%, 13%);
+    position: relative;
+}
+
+.parent .luxury svg {
+    position: absolute;
+    top: 10%;
+    left: 12%;
+}
+
+.parent .luxury .bt-3 {
+    background: white;
+    color:hsl(179, 100%, 13%);
+}
+
+.parent h1 {
+    color: white;
+    font-family:'Big Shoulders Display';
+    margin-top:80px ;
+    margin-bottom: 20px;
+}
+
+.parent p {
+    color: white;
+    opacity: 0.7;
+    margin-bottom: 130px;
+    line-height: 150%;
+ }
+
+ .parent .bt-1,
+ .parent .bt-2,
+ .parent .bt-3 {
+    padding: 13px 30px;
+  border: 5px solid white;
+  border-radius: 50px;
+  text-decoration: none;
+ }
+
+ @media  (max-width:375px){
+    .parent {
+        grid-template-columns: 1fr;
+    }
+ }
+ 
